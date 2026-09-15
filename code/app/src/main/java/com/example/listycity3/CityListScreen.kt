@@ -56,7 +56,7 @@ fun CityListScreen(
                     showAddCityFields = !showAddCityFields
                 }
             ) {
-                Text("+")
+                Text(if (selectedCity != null) "Close" else "+")
             }
         }
         if (showAddCityFields) {
